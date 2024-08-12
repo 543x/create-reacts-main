@@ -45,7 +45,7 @@ themeConfig: {
     textColor: '#fff',
     isCloseable: false,
   },
-}
+},
     algolia: {
       appId: 'AUJYIQ70HN',
       apiKey: '25243dbf9049cf036e87f64b361bd2b9',
