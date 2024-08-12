@@ -140,15 +140,14 @@ const siteConfig = {
           ],
         },
       ],
- logo: {
-      alt: 'Facebook Open Source Logo',
-      src: 'img/oss_logo.png',
+      logo: {
+        alt: 'Facebook Open Source Logo',
+        src: 'img/oss_logo.png',
+      },
+      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
     },
-    copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
-  },
-  onBrokenLinks: 'warn',
-};
+    onBrokenLinks: 'warn',
+  };
+  
+  module.exports = siteConfig;
 
-module.exports = siteConfig;
-
-module.exports = siteConfig;
