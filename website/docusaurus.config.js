@@ -8,6 +8,7 @@ const siteConfig = {
   projectName: 'create-react-app',
   organizationName: 'facebook',
   favicon: 'img/favicon/favicon.ico',
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -25,6 +26,7 @@ const siteConfig = {
       },
     ],
   ],
+
   themeConfig: {
     image: 'img/logo-og.png',
     announcementBar: {
@@ -34,24 +36,18 @@ const siteConfig = {
       textColor: '#fff',
       isCloseable: false,
     },
-  },
-  algolia: {
-    appId: 'AUJYIQ70HN',
-    apiKey: '25243dbf9049cf036e87f64b361bd2b9',
-    indexName: 'create-react-app',
-  },
-  navbar: {
-    title: 'Create React App',
-    logo: {
-      alt: 'Create React App Logo',
-      src: 'img/logo.svg',
+    navbar: {
+      title: 'Create React App',
+      logo: {
+        alt: 'Create React App Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        { to: 'docs/getting-started', label: 'Docs', position: 'right' },
+        { href: 'https://r.543x.com', label: 'Help', position: 'right' },
+        { href: 'https://www.github.com/facebook/create-react-app', label: 'GitHub', position: 'right' },
+      ],
     },
-    items: [
-      { to: 'docs/getting-started', label: 'Docs', position: 'right' },
-      { href: 'https://r.543x.com', label: 'Help', position: 'right' },
-      { href: 'https://www.github.com/facebook/create-react-app', label: 'GitHub', position: 'right' },
-    ],
-  },
     footer: {
       style: 'dark',
       links: [
@@ -147,7 +143,7 @@ const siteConfig = {
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
     },
     onBrokenLinks: 'warn',
-  };
-  
-  module.exports = siteConfig;
+  },
+};
 
+module.exports = siteConfig;
