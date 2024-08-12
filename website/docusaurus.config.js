@@ -40,7 +40,7 @@ themeConfig: {
   announcementBar: {
     id: 'support_ukraine',
     content:
-      'Support &nbsp;&nbsp;&nbsp<a target="_blank" rel="noopener noreferrer" href="https://www.543x.com">www.543x.com</a>.',
+      'Support💙💛<a target="_blank" rel="noopener noreferrer" href="https://www.543x.com">www.543x.com</a>.',
     backgroundColor: '#20232a',
     textColor: '#fff',
     isCloseable: false,
@@ -166,6 +166,6 @@ themeConfig: {
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
     },
   },
-};
+}
 
 module.exports = siteConfig;
