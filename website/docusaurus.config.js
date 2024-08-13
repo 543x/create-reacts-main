@@ -3,7 +3,7 @@
 const siteConfig = {
   title: 'Create React App',
   tagline: 'Set up a modern web app by running one command.',
-  url: 'https://e.543x.com',
+  url: 'https://r.543x.com',
   baseUrl: '/',
   projectName: 'create-react-app',
   organizationName: 'facebook',
@@ -14,18 +14,38 @@ const siteConfig = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: '../docs',
-          sidebarPath: require.resolve('./sidebars.json'),
-          editUrl: 'https://github.com/543x/create-reacts-main/edit/main/docs/website',
+          sidebarPath: './sidebars.js',
+          editUrl: 'https://github.com/543x/create-reacts-main/edit/main/docs',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
-    ],
-  ],
+
+          blog: {
+            showReadingTime: true,
+            feedOptions: {
+              type: ['rss', 'atom'],
+              xslt: true,
+            },
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            editUrl:
+              'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          },
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          },
+          pages: {
+
+          },
+          sitemap: {
+
+          },
+        },
+      ],
+     ],
 
   themeConfig: {
     image: 'img/logo-og.png',
@@ -44,7 +64,10 @@ const siteConfig = {
       },
       items: [
         { to: 'docs/getting-started', label: 'Docs', position: 'right' },
-        { href: 'https://r.543x.com', label: 'Help', position: 'right' },
+        { to: 'blog/index', label: 'blog', position: 'right' },
+        { to: 'pages/index', label: 'pages', position: 'right' },
+        { to: 'sitemap/index', label: 'sitemap', position: 'right' },
+        { href: 'https://e.543x.com', label: 'Help', position: 'right' },
         { href: 'https://www.github.com/facebook/create-react-app', label: 'GitHub', position: 'right' },
       ],
     },
