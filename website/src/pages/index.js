@@ -76,25 +76,26 @@ function Home() {
     <div className="row">
       {/* Get started in seconds */}
       <div className="col col--6">
-        <h2>Get started in seconds</h2>
+        <h2>Go full-stack with a framework</h2>
         <p>
-          Whether you’re using React or another library, Create React App lets you
-          <strong> focus on code, not build tools</strong>.
-          <br />
-          <br />
-          To create a project called <i>my-app</i>, run this command:
+        React is a library. It lets you put components together, but it
+              doesn’t prescribe how to do routing and data fetching. To build an
+              entire app with React, we recommend a full-stack React framework
+              like <Link href="https://nextjs.org">Next.js</Link> or{' '}
+              <Link href="https://remix.run">Remix</Link>.
         </p>
-        <CodeBlock className="language-sh">npx create-react-app my-app</CodeBlock>
+      
       </div>
 
       {/* Easy to Maintain */}
       <div className="col col--6">
-        <h2>Easy to Maintain</h2>
+        <h2>Use the best from every platform</h2>
         <p>
-          Updating your build tooling is typically a daunting and time-consuming task.
-          When new versions of Create React App are released, you can upgrade using a single command:
+        People love web and native apps for different reasons. React
+                lets you build both web apps and native apps using the same
+                skills. It leans upon each platform’s unique strengths to let
+                your interfaces feel just right on every platform.
         </p>
-        <CodeBlock className="language-sh">npm install react-scripts@latest</CodeBlock>
       </div>
     </div>
   </div>
